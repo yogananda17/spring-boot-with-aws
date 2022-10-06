@@ -9,12 +9,12 @@ public class SampleController1{
 	
 	@GetMapping(value = "/")
 	public String greeting() {
-		return "Welcome to spring boot with docker created by nanda";
+		return "Welcome to spring boot created by nanda";
 	}
 	
 	@GetMapping(value = "say/{name}")
 	public String sayHello(@PathVariable("name") String name) {
-		return "Welcome user "+name+" to Spring boot with docker";
+		return "Welcome user "+name+" to Spring boot";
 	}
 	
 }
